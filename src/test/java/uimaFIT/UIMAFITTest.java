@@ -9,6 +9,7 @@ import org.apache.uima.fit.factory.JCasFactory;
 import org.apache.uima.jcas.JCas;
 import org.junit.Test;
 
+//https://uima.apache.org/d/uimafit-current/tools.uimafit.book.html
 public class UIMAFITTest {
     public static class GetStartedQuickAE extends org.apache.uima.fit.component.JCasAnnotator_ImplBase {
         public static final String PARAM_STRING = "stringParam";
