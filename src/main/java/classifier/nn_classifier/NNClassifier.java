@@ -22,7 +22,7 @@ import com.google.common.collect.Lists;
 public class NNClassifier implements Classifier {
 
     @Override
-    public Iterable<Prediction> predict(List<? extends Feature> features) {
+    public Iterable<Prediction> predict(final List<? extends Feature> features) {
         checkNotNull(features, "features");
         checkArgument(features.size()==this.symbolToIdLookupList.size(),"featurs");
         IdsVector idsVector=getIdsVector(features, this.symbolToIdLookupList);
