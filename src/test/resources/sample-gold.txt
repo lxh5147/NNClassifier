@@ -1,0 +1,2 @@
+a/DT pig/NN in/PR the/DT pool/NN ./PUNC
+like/V it/PRON !/PUNC 
