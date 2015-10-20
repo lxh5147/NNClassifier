@@ -48,10 +48,10 @@ public class NNClassifier implements Classifier {
         return idsVector;
     }
 
-    public static final char ID_SEPERATOR=',';
+    public static final char VALUE_SEPERATOR=',';
     private static IdVector getIdVector(Feature feature,SymbolToIdLookup lookup){
        IdVector idVector = new IdVector();
-       for(String value: Splitter.on(ID_SEPERATOR).split(feature.getValue())){
+       for(String value: Splitter.on(VALUE_SEPERATOR).split(feature.getValue())){
            idVector.add(lookup.getId(value));
        }
        return idVector;
