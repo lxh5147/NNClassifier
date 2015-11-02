@@ -9,8 +9,12 @@
 package nn_runtime_jni;
 
 public class nn_runtime {
+  public static long load(String modelPath, boolean normalizeOutputWithSoftmax) {
+    return nn_runtimeJNI.load__SWIG_0(modelPath, normalizeOutputWithSoftmax);
+  }
+
   public static long load(String modelPath) {
-    return nn_runtimeJNI.load(modelPath);
+    return nn_runtimeJNI.load__SWIG_1(modelPath);
   }
 
   public static DoubleVector predict(long modelHandle, IdsVector idsInputs) {
