@@ -42,7 +42,8 @@ public class nn_runtimeJNI {
   public final static native long IdsVector_get(long jarg1, IdsVector jarg1_, int jarg2);
   public final static native void IdsVector_set(long jarg1, IdsVector jarg1_, int jarg2, long jarg3, IdVector jarg3_);
   public final static native void delete_IdsVector(long jarg1);
-  public final static native long load__SWIG_0(String jarg1, boolean jarg2);
-  public final static native long load__SWIG_1(String jarg1);
+  public final static native long load__SWIG_0(String jarg1, boolean jarg2, boolean jarg3);
+  public final static native long load__SWIG_1(String jarg1, boolean jarg2);
+  public final static native long load__SWIG_2(String jarg1);
   public final static native long predict(long jarg1, long jarg2, IdsVector jarg2_);
 }

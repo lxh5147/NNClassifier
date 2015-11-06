@@ -29,7 +29,7 @@ public class IdToSymbolLookup {
         if (ID_TO_SYMBOL_LOOKUP_TABLES.containsKey(idToSymbolLookupKey)) {
             return ID_TO_SYMBOL_LOOKUP_TABLES.get(idToSymbolLookupKey);
         }
-        try (BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(file), "UTF8"))) {
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(file), "UTF-8"))) {
             String line = null;
             List<String> symbols = Lists.newArrayList();
             while ((line = reader.readLine()) != null) {
