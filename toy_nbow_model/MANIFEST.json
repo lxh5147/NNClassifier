@@ -1,0 +1,1 @@
+{"query_input_features": ["field_ids"], "word_input_features": ["prefix_1", "prefix_2", "prefix_3", "suffix_1", "suffix_2", "suffix_3", "words"], "version": "0.1", "query_output_features": ["domains"]}
