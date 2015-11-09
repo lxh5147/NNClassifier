@@ -20,7 +20,7 @@ import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 
 public class NNClassifierTest {
-    @Test
+    //@Test
     public void runPredictionTest() throws Exception{
         String binaryModel="/home/lxh5147/git/NNRuntime/tools/toy_nbow_model.bin";
         String theanoModelRoot="toy_nbow_model";
@@ -96,6 +96,7 @@ public class NNClassifierTest {
         while((line=reader.readLine())!=null){
             Annotation annotation=parse(line,wordToIdLookup);
             String prediction=predict(annotation,classifier,featureNames);
+            //System.out.println("prediction:"+prediction +" vs truth:" + annotation.domain);
             accumulate(annotation,prediction,results);
         }
         reader.close();
